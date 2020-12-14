@@ -1,0 +1,300 @@
+/* Box sizing rules */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+
+ul[role="list"], ol[role="list"] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+
+/* A elements that don't have a class get default styles */
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+
+img, picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+body {
+    font-size: 16px;
+    color: #000;
+    word-wrap: break-word;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+textarea, input {
+    outline: none;
+    width: 100%;
+    padding:5px 40px 5px 5px;
+    resize: none !important;
+    border-color: #08c;
+}
+
+
+button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.main__app {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.app {
+    display: flex;
+}
+
+.board__input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+}
+
+.delCard__btn, .save__btn {
+    display: inline-block;
+    margin: 5px;
+}
+
+.board__inner {
+    border: 1px solid #08c;
+    border-radius: 3px;
+    width: 350px;
+    padding: 5px;
+    margin: 0 5px;
+   
+    /* background-color: #dbdbdb; */
+    background-color:#f5fcff;;
+
+    position: relative;
+}
+
+.board__text_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.board__text_inner p {
+    font-size: 20px;
+}
+
+.board__text {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.board__add {
+    margin-top: 25px;
+}
+
+.subboard__from {
+    margin-top: 25px;
+}
+
+.card__inner {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    border: 1px solid #08c;
+    padding: 5px 0 5px 5px;
+    background-color:white;
+    
+}
+
+.card__text {
+    display: inline-block;
+    margin-right: 10px;
+    max-width: 250px;
+}
+
+.wall {
+    width: 200px;
+    height: 150px;
+    padding: 50px;
+    background-color: #91b5c7;
+    display: inline-block;
+    margin: 25px 25px 25px 0px;
+    position: relative;
+}
+
+.walls__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.addCard__btn {
+    margin: 0;
+    margin-top: 10px;
+
+}
+
+.modalWindow {
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalWindow__content {
+    z-index: 10;
+    max-width: 700px;
+    max-height: 600px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 20px;
+    position: relative;
+}
+
+.shortDescr {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.fullDescr {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.form__button {
+    display: block;
+}
+
+.modalDel__btn {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.form__button {
+    position: absolute;
+    top: 60px;
+    border: none;
+}
+
+.modal__form {
+    padding-bottom: 35px;
+}
+
+.wallAdd {
+    position: relative;
+    margin: 50px auto;
+}
+
+.wallDel {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+}
+
+.backToWalls__link {
+    margin: 10px;
+}
+
+.form__style {
+    position: relative;
+    
+}
+
+.board__text_box {
+    position: relative;
+}
+
+.editBoard__btn {
+    position: absolute;
+    right: -45px;
+}
+
+.cardAdd__form {
+    margin-top: 10px;
+    position: relative;
+}
+
+.modal__form {
+    position: relative;
+}
+
+.modalEdit__btn,.addCardEditMode__btn, .main__button, .delBoard__btn,.addWall__btn {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+
+.wallAdd {
+    position: relative;
+    width: 300px;
+}
+.main__textarea {
+    width: 300px;
+}
+.wallAdd__input {
+    width: 100%;
+}
